@@ -115,3 +115,67 @@ Como parte del triaje, también hemos ejecutado **Win64dd de Moonsols** para cap
 
 ![Información del disco](Fotos/foto20.png)
 
+## Archivo del Triaje 
+En esta sección se encuentran recopilados todos los archivos generados durante el proceso de triaje, incluyendo las evidencias digitales obtenidas y sus respectivos hashes de verificación. 
+Estos hashes permiten garantizar la integridad y autenticidad de los archivos, facilitando su comparación en revisiones o auditorías futuras. 
+Esta organización asegura que cualquier cambio en los archivos pueda ser detectado, brindando mayor seguridad y confiabilidad en el manejo de las evidencias.
+
+![Información del disco](Fotos/Triaje.png)
+
+## Logs de ficheros
+ 
+![Información del disco](Fotos/triaje2.png)
+
+
+### Cadena de Custodia
+
+| **Acta de Adquisición Forense** |                                                              |
+|---------------------------------|--------------------------------------------------------------|
+| **Fecha y hora**                | 12 de noviembre de 2024, 13:53:33                          |
+| **Lugar**                       | Oficina central de la empresa en Cadiz                   |
+| **Perito forense**              | Javi Rodriguez, DNI: XXXXXXXX-X                                |
+| **Solicitante**                 | Departamento de Seguridad Informática                      |
+| **Descripción del dispositivo** | Ordenador de sobremesa                                                          |
+| **Tipo de dispositivo**         | Ordenador de sobremesa                                     |
+| **Marca y modelo**              | HP ProDesk 600 G2                                          |
+| **Número de serie**             | -----------                                                |
+| **Capacidad**                   | 32 GB (disco duro), 1 GB (RAM)                            |
+| **Estado físico**               | Sin daños aparentes, en buen estado                        |
+| **Método de adquisición**       | Clonado bit a bit (disco duro), Volcado de memoria (RAM)   |
+| **Herramientas utilizadas**     | RamCapture, FTK Imager, IR Triaje                                     |
+| **Configuración**               | Formato de imagen E01 para disco, archivo .mem para RAM    |                    
+| **Observaciones**               | La adquisición se completó con evidencias.                 |
+| **Firmas**                      |                                                              |
+| **Perito forense**              | Javi [JaviR]                                       |
+| **Testigo**                     | Pepito [Pepito]                                       |
+| **Responsable**                 | Manuel[Manuel]                                       |
+
+### Descripción de la Evidencia
+1. **Memoria RAM**:
+   - **Tipo de Evidencia**: Volcado de Memoria.
+   - **Tamaño**: 1 GB.
+   - **Características Relevantes**: Contiene datos de procesos en ejecución y posibles indicadores de compromiso activos.
+   - **Valor hash original Ram MD5**: fe4182e8edbada2648aae6e62e8b5e49c2  
+   - **Valor hash original Ram SHA-256**: SHA-256 7989f3f3923abc5c9c056f76c129651feb2e60410d4a26c75be4dc4b5db22e5b               
+   - **Algoritmo utilizado**: MD5, SHA-256
+
+2. **Disco Duro**:
+   - **Tipo de Evidencia**: Imagen Física (bit a bit).
+   - **Tamaño**: 32 GB.
+   - **Características Relevantes**: Incluye particiones del sistema operativo, archivos de usuario, y logs de actividad.
+   - **Valor hash original Disco MD5**: 3b2533c7ee948059763911b78ce6b78
+   - **Valor hash original Disco SHA1**: d0119fc3d80549f888aa4337a1bb8a70a37f13ef
+
+#### Almacenamiento de la Evidencia
+
+- **Método de Almacenamiento**: Las evidencias se almacenan en un disco duro externo cifrado con AES-256. 
+- **Ubicación Inicial**: Sala segura en la oficina central, controlada mediante sistema de acceso con registro biométrico.
+- **Ubicación a Largo Plazo**: Laboratorio Forense, en un contenedor seguro con monitoreo 24/7 y acceso restringido.
+- **Medidas de Seguridad**: Las copias de seguridad se mantienen en una unidad separada dentro de una caja fuerte resistente al fuego.
+
+### Metodologia Aplicada
+
+He aplicado la metodología siguiendo las normativas de referencia (NIST, UNE 71506, RFC 3227), 
+asegurando que el proceso de adquisición y preservación de las evidencias se realice conforme 
+a los estándares establecidos. El siguiente paso ahora consiste en realizar un análisis detallado de las evidencias obtenidas, 
+para posteriormente generar un informe forense completo y documentado, que incluya los hallazgos, la correlación de los datos y las conclusiones derivadas del caso.
